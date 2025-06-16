@@ -60,7 +60,7 @@ const server = http.createServer(app);
 // Setup Socket.IO server
 const io = new Server(server, {
   cors: {
-    origin: process.env.CLIENT_URL || '*',  // Use Vercel frontend in production
+    origin: process.env.CLIENT_URL || 'https://task-frontend-fawn-six.vercel.app',  // Use Vercel frontend in production
     methods: ['GET', 'POST'],
     credentials: true
   }
@@ -68,7 +68,7 @@ const io = new Server(server, {
 
 // Middleware
 app.use(cors({
-  origin: process.env.CLIENT_URL || '*',    // Allow frontend URL
+  origin: process.env.CLIENT_URL || 'https://task-frontend-fawn-six.vercel.app',    // Allow frontend URL
   credentials: true
 }));
 app.use(express.json());
