@@ -65,7 +65,7 @@ const io = new Server(server, {
 
 // Middleware
 app.use(cors({
-  origin: 'https://task-frontend-khaki-phi.vercel.app',
+  origin: 'https://task-frontend-wsb5.vercel.app',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
